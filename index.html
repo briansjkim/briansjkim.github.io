@@ -247,7 +247,9 @@
                 <img class="img-fluid d-block mx-auto" src="https://bkportfolio.s3.us-east-2.amazonaws.com/Screen+Shot+2019-12-11+at+7.15.05+PM.png" alt="">
                 <p>For those to play fantasy basketball, before going into your league's draft, we would create a list of players who we want to draft. These players would be an even spread of superstars or solid players who would help us grab the number one spot!<strong> However, </strong> as the draft proceeds, we see our desired players being taken by our friends/opponents.<br /><br /> In order to fix this, I created a fantasy basketball app so that users can create their dream team without any interruptions. With this app, you can easily add any player you like. If you change your mind, you can drop them from your team and see that player added back to the available players list. If, for some reason, a player gets traded right before the draft, you can update the team that they player along with deleting that player from the list if they retire.</p>
                 <p>A technical issue that I ran into was having each player be removed from the available players list and added to the team list quickly. I had initially used MongoDB as my database; however, after multiple attempts at optimization, there was still a very slight lag in rendering. So, I migrated databases from MongoDB to PostgreSQL and optimized it through PostgreSQL tuning and vertical partitioning. Not only did this speed up the rendering time, but it also reduced my query times by about 10ms.</p>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <p>Feel free to check out BBB Fantasy in detail!</p>
+                <a href="https://github.com/briansjkim/bbb-fantasy">BBB Fantasy</a><br/><br/>
+                <button class="btn btn-dark" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
               </div>
@@ -276,7 +278,9 @@
                 <p class="item-intro text-muted">Restructured the backend by migrating and scaling databases to hold millions of users and data</p>
                 <img class="img-fluid d-block mx-auto" src="https://bkportfolio.s3.us-east-2.amazonaws.com/sdc.png" alt="">
                 <p>I was given a legacy codebase with a database that only held 100 products and was required to scale the database in order to hold millions of records of data. There was very little, nearly none, optimization at the time I was given it.<br /><br /> My initial task was to decide which database would best fit the component that I was working. In order to do this, I decided to scale and test three different databases: MongoDB, PostgreSQL, and Cassandra. <br/><br />The difference in all three query exeuction times showed Cassandra as the slowest, MongoDB in second place, and PostgreSQL in the first with a 6ms difference between Cassandra and PostgreSQL. <br/><br /> To ensure that PostgreSQL would perform properly under extreme conditions, I implemented k6 and used New Relic to analyze its performance. At first, the performance was very poor because all of my data was stored in a single table. In order to improve this, I vertically partitioned the database to break the single table up into 6 tables which solved the poor performance.<br /><br />A further optimization that would have improved the performance even more would have been implementing a load-balancer in order to efficiently distribute the workload. </p>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <p>Feel free to check out Craftworkery in detail!</p>
+                <a href="https://github.com/SDC-PepperJack/Pepperjack-checkout-service">Craftworkery</a><br /><br />
+                <button class="btn btn-dark" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
               </div>
@@ -305,7 +309,9 @@
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="https://bkportfolio.s3.us-east-2.amazonaws.com/Screen+Shot+2019-12-11+at+10.41.47+AM.png" alt="">
                 <p>An application built between a team of four developers who collaborated to create and test different modules to create a single working site.<br /><br/>Each member in our team created a specific module to build and test in order to bring them all together to create what you see on the left. By using Agile Methodology, we were able to request for and provide code reviews, provide assistance to each other, and consistently meet product deadlines. <br /><br/>The biggest challenge for us was bringing in all four modules together to render a functional site and creating a test-driven development. By keeping each other updated through stand-ups and Trello, we set deadlines for ourselves to create and pass a certain number of tests using Jest and Enzyme. Additionally, another big challenge came from our styling formats. When we brought all of our components together through a proxy server, our styles were conflicting with each other because of the lack of specificity in our class names and some members were using styled components which required an additional configuration. Luckily, we were able to get past this quickly by specifying our class names to correspond to our respective styles. <br /><br />My specific role for this application was to create a photo carousel from scratch with modals for each image. A technical challenge that I ran into while working on my module was getting text to appear on each of the modal images. It gave me an error that stated that paragraph tags cannot appear with an image. Thankfully, it wasn't an issue that took me days to figure out. I ended up changing my paragraph tags into heading tags which worked even better because the text were specific descriptions of each image and film.</p>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <p>Feel free to check out MPE in detail!</p>
+                <a href="https://github.com/hrr41-fec-frieza/mooviesdb-photo-carousel">MPE</a><br /><br />
+                <button class="btn btn-dark" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
               </div>
@@ -334,7 +340,9 @@
                 <p class="item-intro text-muted">An application that uses Github's API to grab all of the repositorise from a certain user and filters out the top 25 repos based on the number of watchers.</p>
                 <img class="img-fluid d-block mx-auto" src="https://bkportfolio.s3.us-east-2.amazonaws.com/Screen+Shot+2019-12-12+at+2.31.59+AM.png" alt="">
                 <p>An application that uses Github's API to grab all of the repositories from a certain user and filters out the top 25 repos based on the number of watchers.<br /><br/> Users can add any Github user that they like by adding a Github username and see their screen fill up with that specific user's repositories. If users decide to input multiple Github users, the database will compare the number of watchers between all of the users in the database and return the top 25 repositories between all of the users.<br /><br />A technical challenge that I ran into while working on this application was actually using Github's API because it was my first exposure working with a real API. By using the request module and following its documentation, I was able to quickly understand how to implement it in order to retrieve data from Github and store it into the database.<p>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <p>Feel free to check out Github Fetcher in detail!</p>
+                <a href="https://github.com/briansjkim/github-fetcher">Gitub Fetcher</a><br/><br/>
+                <button class="btn btn-dark" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
               </div>
