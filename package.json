@@ -1,11 +1,11 @@
 {
-    "title": "Agency",
-    "name": "startbootstrap-agency",
+    "title": "Portfolio",
+    "name": "Personal Portfolio",
     "version": "5.2.2",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Agency is a one page HTML theme for Bootstrap.",
+    "description": "My Personal Portfolio to showcase my work",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +14,17 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/agency",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
-        "email": "feedback@startbootstrap.com"
+        "email": "briaansjkim@gmail.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Brian Kim",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Brian Kim"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
+        "url": "https://github.com/briansjkim/personal-portfolio.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
