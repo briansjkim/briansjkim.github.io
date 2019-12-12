@@ -183,17 +183,24 @@ header.masthead {
   color: white;
   width: auto;
   height: 800px;
-  background-image: url("https://bkportfolio.s3.us-east-2.amazonaws.com/56268535_2619200774787921_6061233164385255424_n.jpg");
+  background: #c9af98;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
 
+header.masthead .intro-pic {
+  width: 300px;
+  height: 300px;
+  border-radius:50px;
+}
+
 header.masthead .intro-text {
   padding-top: 10px;
   padding-bottom: 100px;
 }
+
 
 header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
@@ -213,7 +220,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 500px;
+    padding-top: 100px;
     padding-bottom: 700px;
   }
   header.masthead .intro-text .intro-lead-in {
