@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Portfolio v5.2.2 ()
- * Copyright 2013-2019 Brian Kim
- * Licensed under MIT (https://github.com/BlackrockDigital/portfolio/blob/master/LICENSE)
- */
-
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -14,11 +8,11 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #3a4660;
 }
 
 a:hover {
-  color: #fec503;
+  color: #c9af98;
 }
 
 .text-primary {
@@ -37,12 +31,26 @@ h6 {
 
 .page-section {
   padding: 100px 0;
+  text-align: center;
+}
+
+.about-me {
+  text-align: center;
+}
+
+.about-me p {
+  text-align: left;
+}
+
+.about-tech {
+  padding: 100px 0;
 }
 
 .page-section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
+  color: #c9af98;
 }
 
 .page-section h3.section-subheading {
@@ -66,7 +74,7 @@ h6 {
 }
 
 ::selection {
-  background: #fed136;
+  background: white;
   text-shadow: none;
 }
 
@@ -116,19 +124,19 @@ img::-moz-selection {
   right: 0;
   padding: 13px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   border: 0;
-  background-color: #fed136;
+  background-color: white;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #bd8c7d;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #845007;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -141,21 +149,19 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #ed8a63;
 }
 
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -175,7 +181,9 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  width: auto;
+  height: 800px;
+  background-image: url("https://bkportfolio.s3.us-east-2.amazonaws.com/56268535_2619200774787921_6061233164385255424_n.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -183,7 +191,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 10px;
   padding-bottom: 100px;
 }
 
@@ -205,8 +213,8 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 500px;
+    padding-bottom: 700px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -246,10 +254,10 @@ header.masthead .intro-text .intro-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  /* background: rgba(254, 209, 54, 0.9); */
+  background-color: black;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -366,7 +374,6 @@ header.masthead .intro-text .intro-heading {
   height: 75px;
   margin-left: 35px;
   /* IE 9 */
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #212529;
 }
@@ -377,7 +384,6 @@ header.masthead .intro-text .intro-heading {
   width: 1px;
   height: 75px;
   /* IE 9 */
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #212529;
 }
@@ -589,11 +595,9 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0;
 }
 
+
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 section#contact .section-heading {
@@ -676,14 +680,13 @@ ul.social-buttons li a {
   display: block;
   width: 50px;
   height: 50px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: white;
+  color: black;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: white;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #c9af98;
 }
