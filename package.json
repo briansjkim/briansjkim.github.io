@@ -1,6 +1,6 @@
 {
     "title": "Portfolio",
-    "name": "Personal Portfolio",
+    "name": "portfolio",
     "version": "5.2.2",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
