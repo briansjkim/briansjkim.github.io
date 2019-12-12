@@ -46,11 +46,13 @@ h6 {
   padding: 100px 0;
 }
 
+
+
 .page-section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: black;
+  color: #c9af98;
 }
 
 .page-section h3.section-subheading {
@@ -257,7 +259,7 @@ header.masthead .intro-text .intro-heading {
   transition: all ease 0.5s;
   opacity: 0;
   /* background: rgba(254, 209, 54, 0.9); */
-  background-color: black;
+  background: black;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
