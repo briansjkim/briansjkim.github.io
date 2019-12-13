@@ -33,7 +33,7 @@ h6 {
 .page-section {
   padding: 100px 0;
   text-align: center;
-  background: #c9af98;
+  background: 	#DCDCDC;
 }
 
 .about-me {
@@ -48,6 +48,14 @@ h6 {
 .about-tech {
   padding: 100px 0;
   color: #3a4660;
+}
+
+.about-link {
+  color: #bd8c7d;
+}
+
+.about-link:hover {
+  color: black;
 }
 
 .page-section h2.section-heading {
@@ -187,7 +195,7 @@ header.masthead {
   color: white;
   width: auto;
   height: 800px;
-  background: #c9af98;
+  background: #D3D3D3;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
