@@ -3,7 +3,7 @@
     "name": "portfolio",
     "version": "5.2.2",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "forever start node_modules/.bin/gulp watch"
     },
     "description": "My Personal Portfolio to showcase my work",
     "keywords": [
@@ -29,6 +29,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
         "bootstrap": "4.3.1",
+        "forever": "^1.0.0",
         "git": "^0.1.5",
         "gulp-cli": "^2.2.0",
         "jquery": "3.4.1",
