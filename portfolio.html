@@ -116,6 +116,20 @@
               <p class="text-muted">An API-powered application displaying the top 25 repos between Github users</p>
             </div>
           </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <p>ryk Blog</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="https://ryk.s3.us-east-2.amazonaws.com/Screen+Shot+2019-12-14+at+2.17.21+PM.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>ryk Blog</h4>
+              <p class="text-muted">An online journal displaying my client's thoughts, ideas, and views</p>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -243,6 +257,36 @@
                 <p>An application that uses Github's API to grab all of the repositories from a certain user and filters out the top 25 repos based on the number of watchers.<br /><br/> Users can add any Github user that they like by adding a Github username and see their screen fill up with that specific user's repositories. If users decide to input multiple Github users, the database will compare the number of watchers between all of the users in the database and return the top 25 repositories between all of the users.<br /><br />A technical challenge that I ran into while working on this application was actually using Github's API because it was my first exposure working with a real API. By using the request module and following its documentation, I was able to quickly understand how to implement it in order to retrieve data from Github and store it into the database.<p>
                 <p>Feel free to check out Github Fetcher in detail!</p>
                 <a href="https://github.com/briansjkim/github-fetcher">Gitub Fetcher</a><br/><br/>
+                <button class="btn btn-dark" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">ryk Blog</h2>
+                <p class="item-intro text-muted">An online journal for my client's thoughts, ideas, and views</p>
+                <img class="img-fluid d-block mx-auto" src="https://ryk.s3.us-east-2.amazonaws.com/Screen+Shot+2019-12-14+at+2.17.21+PM.png" alt="">
+                <p>Currently a work in process.<p>
+                <p>Feel free to be updated on ryk Blog!</p>
+                <a href="https://github.com/briansjkim/ryk-blog">ryk Blog</a><br/><br/>
                 <button class="btn btn-dark" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
