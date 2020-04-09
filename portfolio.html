@@ -356,18 +356,21 @@
                 <p>An application designed to be a online journal for my client to write blogs about their thoughts,
                   ideas, and views.<p>
                     <p>This application focused more on frontend development using React and SCSS, while, also, required
-                      backend
-                      development in order to save, retrieve, and delete blog posts. My client is able to view all of
+                      backend development in order to save, retrieve, and delete blog posts. My client is able to view
+                      all of
                       their posts in two pages, the home page, which also displays a photo of their choosing, and the
-                      'All'
-                      page where only blog posts are displayed. The home page was a simple set up which just required an
+                      'All' page where only blog posts are displayed. <br /><br /> The home page was a simple set up
+                      which just required an
                       initial GET request from the server to retrieve the blogs and display them; however, the blogs
-                      were designed to only show a small portion of itself. In addition to that, the home page requires
+                      were designed to only show a small portion of itself. This was designed in order to reduce the
+                      space for each blog. In addition to that, the home page requires
                       two Link components from React Router. The first occurrence of the Link component directs the user
-                      to the 'All' page and the second occurrence of the Link component directs the user to the 'Blog'
-                      page which displays the full version of the blog chosen. Additionally, they can view the full blog
-                      if they click
-                      on either the title of the blog or the 'Read More' line.</p>
+                      to the 'All' page. My client can also view each blog with its full content in a different page
+                      which is the second occurrence of the Link component directs the user to the 'Blog'
+                      page which displays the full version of the blog chosen. <br /><br /> This application also
+                      utilizes the POST and DELETE request by letting my client create new blog posts and delete them.
+                      Once they go to the 'All' page, they are shown a create button, another Link component, which
+                      takes them to the 'Create' page where they add the title, date, and the message.</p>
                     <a href="https://github.com/briansjkim/ryk-blog">Ryk-Blog</a><br /><br />
                     <button class="btn btn-dark" data-dismiss="modal" type="button">
                       <i class="fas fa-times"></i>
