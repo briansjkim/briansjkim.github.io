@@ -154,6 +154,67 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
+                <h2 class="text-uppercase">Ryk-Blog</h2>
+                <p class="item-intro text-muted">A blog site for my client's thoughts, ideas, and views</p>
+                <img class="img-fluid d-block mx-auto"
+                  src="https://ryk.s3.us-east-2.amazonaws.com/Screen+Shot+2020-04-09+at+5.49.35+PM.png" alt="">
+                <img class="img-fluid d-block mx-auto"
+                  src="https://ryk.s3.us-east-2.amazonaws.com/Screen+Shot+2020-04-09+at+5.49.47+PM.png" alt="">
+                <p>An application designed to be a online journal for my client to write blogs about their thoughts,
+                  ideas, and views.<p>
+                    <p>This application focused more on frontend development using React and SCSS, while, also, required
+                      backend development in order to save, retrieve, and delete blog posts. My client is able to view
+                      all of
+                      their posts in two pages, the home page, which also displays a photo of their choosing, and the
+                      'All' page where only blog posts are displayed. <br /><br /> The home page was a simple set up
+                      which just required an
+                      initial GET request from the server to retrieve the blogs and display them; however, the blogs
+                      were designed to only show a small portion of itself. This was designed in order to reduce the
+                      space for each blog. In addition to that, the home page requires
+                      two Link components from React Router. The first occurrence of the Link component directs the user
+                      to the 'All' page. My client can also view each blog with its full content in a different page
+                      which is the second occurrence of the Link component directs the user to the 'Blog'
+                      page which displays the full version of the blog chosen. <br /><br /> This application also
+                      utilizes the POST and DELETE request by letting my client create new blog posts and delete them.
+                      Once they go to the 'All' page, they are shown a create button, another Link component, which
+                      takes them to the 'Create' page where they add the title, date, and the message. Once they finish
+                      the blog, they submit the blog which takes them to the home page and they can view their newly
+                      created blog there or in the 'All' page. If they want to delete a blog, they can simply view the
+                      full blog which displays a delete button, another Link component. Once clicked on, the request
+                      will be sent to the server, and they will be directed to the home page.<br /><br /> A technical
+                      challenge that I ran into while working on this application was working with React Router,
+                      specifically being able to refresh on any page. Since it was my first time working with React
+                      Router, it was a lot of trial and error. Using the documentation alone did not help, so I used
+                      many online resources to figure out the issue and, in the end, I decided to go with the
+                      'Catch-all' method which requires me to redirect all of my server requests to the html page. It
+                      required an additional GET request where the server would direct all requests to the given path
+                      for the html file.</p>
+                    <p>Technologies used: React, SCSS, Node.js/Express, MongoDB/Mongoose, AWS (S3 & EC2)</p>
+                    <p>Feel free to check out Ryk-Blog in detail!</p>
+                    <a href="https://github.com/briansjkim/ryk-blog">Ryk-Blog</a><br /><br />
+                    <button class="btn btn-dark" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
                 <h2 class="text-uppercase">BBB Fantasy</h2>
                 <p class="item-intro text-muted">A homage to Big Baller Brand - An interative fantasy basketball app
                   with a very clean, minimalistic design</p>
@@ -190,8 +251,8 @@
     </div>
   </div>
 
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -235,8 +296,8 @@
     </div>
   </div>
 
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -276,109 +337,6 @@
                 <button class="btn btn-dark" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2 class="text-uppercase">Github Fetcher</h2>
-                <p class="item-intro text-muted">An application that uses Github's API to grab all of the repositorise
-                  from a certain user and filters out the top 25 repos based on the number of watchers.</p>
-                <img class="img-fluid d-block mx-auto"
-                  src="https://bkportfolio.s3.us-east-2.amazonaws.com/Screen+Shot+2019-12-12+at+2.31.59+AM.png" alt="">
-                <p>An application that uses Github's API to grab all of the repositories from a certain user and filters
-                  out the top 25 repos based on the number of watchers.<br /><br /> Users can add any Github user that
-                  they like by adding a Github username and see their screen fill up with that specific user's
-                  repositories. If users decide to input multiple Github users, the database will compare the number of
-                  watchers between all of the users in the database and return the top 25 repositories between all of
-                  the users.<br /><br />A technical challenge that I ran into while working on this application was
-                  actually using Github's API because it was my first exposure working with a real API. By using the
-                  request module and following its documentation, I was able to quickly understand how to implement it
-                  in order to retrieve data from Github and store it into the database.<p>
-                    <p>Technologies Used: React, Node.js/Express, MongoDB/Mongoose, Github API</p>
-                    <p>Feel free to check out Github Fetcher in detail!</p>
-                    <a href="https://github.com/briansjkim/github-fetcher">Gitub Fetcher</a><br /><br />
-                    <button class="btn btn-dark" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2 class="text-uppercase">Ryk-Blog</h2>
-                <p class="item-intro text-muted">A blog site for my client's thoughts, ideas, and views</p>
-                <img class="img-fluid d-block mx-auto"
-                  src="https://ryk.s3.us-east-2.amazonaws.com/Screen+Shot+2020-04-09+at+5.49.35+PM.png" alt="">
-                <img class="img-fluid d-block mx-auto"
-                  src="https://ryk.s3.us-east-2.amazonaws.com/Screen+Shot+2020-04-09+at+5.49.47+PM.png" alt="">
-                <p>An application designed to be a online journal for my client to write blogs about their thoughts,
-                  ideas, and views.<p>
-                    <p>This application focused more on frontend development using React and SCSS, while, also, required
-                      backend development in order to save, retrieve, and delete blog posts. My client is able to view
-                      all of
-                      their posts in two pages, the home page, which also displays a photo of their choosing, and the
-                      'All' page where only blog posts are displayed. <br /><br /> The home page was a simple set up
-                      which just required an
-                      initial GET request from the server to retrieve the blogs and display them; however, the blogs
-                      were designed to only show a small portion of itself. This was designed in order to reduce the
-                      space for each blog. In addition to that, the home page requires
-                      two Link components from React Router. The first occurrence of the Link component directs the user
-                      to the 'All' page. My client can also view each blog with its full content in a different page
-                      which is the second occurrence of the Link component directs the user to the 'Blog'
-                      page which displays the full version of the blog chosen. <br /><br /> This application also
-                      utilizes the POST and DELETE request by letting my client create new blog posts and delete them.
-                      Once they go to the 'All' page, they are shown a create button, another Link component, which
-                      takes them to the 'Create' page where they add the title, date, and the message. Once they finish
-                      the blog, they submit the blog which takes them to the home page and they can view their newly
-                      created blog there or in the 'All' page. If they want to delete a blog, they can simply view the
-                      full blog which displays a delete button, another Link component. Once clicked on, the request
-                      will be sent to the server, and they will be directed to the home page.<br /><br /> A technical
-                      challenge that I ran into while working on this application was working with React Router,
-                      specifically being able to refresh on any page. Since it was my first time working with React
-                      Router, it was a lot of trial and error. Using the documentation alone did not help, so I used
-                      many online resources to figure out the issue and, in the end, I decided to go with the
-                      'Catch-all' method which requires me to redirect all of my server requests to the html page. It
-                      required an additional GET request where the server would direct all requests to the given path
-                      for the html file.</p>
-                    <p>Technologies used: React, SCSS, Node.js/Express, MongoDB/Mongoose, AWS (S3 & EC2)</p>
-                    <p>Feel free to check out Ryk-Blog in detail!</p>
-                    <a href="https://github.com/briansjkim/ryk-blog">Ryk-Blog</a><br /><br />
-                    <button class="btn btn-dark" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
               </div>
             </div>
           </div>
